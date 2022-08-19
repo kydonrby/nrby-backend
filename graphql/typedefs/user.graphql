@@ -1,0 +1,42 @@
+# Types
+type User { 
+  user_id: ID!
+  username: String!
+  nrby_version: String!
+  os_type: String!
+  os_version: String!
+  model: String!
+  carrier: String!
+  last_lat: String!
+  last_lon: String!
+  last_check_in: Date!
+  app_role_name: String!
+}
+
+# Inputs
+input UserCreateInput {
+  username: String!
+  nrby_version: String
+  os_type: String
+  os_version: String
+  model: String
+  carrier: String
+  last_lat: String
+  last_lon: String
+  last_check_in: Date
+  app_role_name: String
+}
+
+input UserUpdateInput {
+  user_id: ID!
+  username: String
+  nrby_version: String
+  os_type: String
+  os_version: String
+  model: String
+  carrier: String
+  last_lat: String
+  last_lon: String
+  last_check_in: Date
+  app_role_name: String
+}

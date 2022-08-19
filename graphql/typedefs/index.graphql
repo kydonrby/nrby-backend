@@ -1,11 +1,11 @@
 scalar Date
 
 type Query {
-  authors: [Author]!
-  author(id: ID!): Author
+  users: [User]!
+  user(id: ID!): User
 }
 
 type Mutation {
-  createAuthor(author: AuthorCreateInput!): Author!
-  updateAuthor(id: ID!, author: AuthorUpdateInput!): Author!
+  createUser(user: UserCreateInput!): User!
+  updateUser(user: UserUpdateInput!): User!
 }
